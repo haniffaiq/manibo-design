@@ -1,0 +1,32 @@
+{
+  "name": "@solution/driver-verification-ui",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./manifest": "./src/manifest.ts",
+    "./drivers-page": "./src/drivers-page.tsx",
+    "./widgets/dashboard-widget": "./src/widgets/dashboard-widget.tsx",
+    "./api/driver-verification": "./src/api/driver-verification.ts"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "lint": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "next": "^15.0.0"
+  },
+  "dependencies": {
+    "@grove/ui": "file:../../../packages/ui",
+    "@grove/web-shared": "file:../../../packages/web-shared",
+    "swr": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/react": "^19.0.0",
+    "vitest": "^4.0.18"
+  }
+}

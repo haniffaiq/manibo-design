@@ -1,0 +1,45 @@
+{
+  "name": "@grove/web-shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./types/auth": "./src/types/auth.ts",
+    "./types/solution-manifest": "./src/types/solution-manifest.ts",
+    "./types/clinic": "./src/types/clinic.ts",
+    "./types/driver": "./src/types/driver.ts",
+    "./types/solution-state": "./src/types/solution-state.ts",
+    "./types/call-events": "./src/types/call-events.ts",
+    "./api/platform": "./src/api/platform.ts",
+    "./components/page-header": "./src/components/page-header.tsx",
+    "./components/icons": "./src/components/icons.tsx",
+    "./components/solution-load-error-state": "./src/components/solution-load-error-state.tsx",
+    "./components/solution-unavailable-state": "./src/components/solution-unavailable-state.tsx",
+    "./types/tenant-locale": "./src/types/tenant-locale.ts",
+    "./hooks/use-tenant-locale": "./src/hooks/use-tenant-locale.ts",
+    "./lib/tenant-locale-formatters": "./src/lib/tenant-locale-formatters.ts",
+    "./lib/error-message": "./src/lib/error-message.ts",
+    "./lib/livekit-browser-room": "./src/lib/livekit-browser-room.ts",
+    "./components/browser-voice-client": "./src/components/browser-voice-client.tsx"
+  },
+  "scripts": {
+    "check-types": "tsc --noEmit",
+    "lint": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "livekit-client": "^2.0.0"
+  },
+  "peerDependenciesMeta": {
+    "livekit-client": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@grove/ui": "file:../ui"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/react": "^19.0.0"
+  }
+}

@@ -1,0 +1,393 @@
+<mxfile host="app.diagrams.net" agent="Claude" version="26.0.0" pages="2">
+  <diagram id="architecture" name="Platform Architecture">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ============================================================ -->
+        <!-- TITLE                                                        -->
+        <!-- ============================================================ -->
+        <mxCell id="title" value="UPU Reverse Logistics Solution &amp;mdash; manibo.ai Platform Architecture" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=18;fontStyle=1;fontFamily=Helvetica;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="100" y="10" width="1000" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ============================================================ -->
+        <!-- ROW 1 — USER INTERFACES (light blue)                         -->
+        <!-- ============================================================ -->
+        <mxCell id="row1_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;arcSize=4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="60" width="1120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="row1_label" value="User Interfaces" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#4a6fa5;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="50" y="62" width="120" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ui_consumer" value="&lt;b&gt;Consumer Web Portal&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Photo Upload &amp;bull; Valuation&lt;br&gt;Scheduling &amp;bull; Tracking &amp;bull; Payments&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="120" y="85" width="420" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ui_admin" value="&lt;b&gt;Admin Dashboard&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Compliance &amp;bull; Recycler Mgmt&lt;br&gt;Analytics &amp;bull; Regulatory Exports&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#6c8ebf;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="660" y="85" width="420" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- ============================================================ -->
+        <!-- ROW 2 — API LAYER (gray)                                     -->
+        <!-- ============================================================ -->
+        <mxCell id="row2_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e6e6e6;strokeColor=#999999;arcSize=4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="1120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="row2_label" value="API Layer" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#555555;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="50" y="182" width="80" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="api_gw" value="&lt;b&gt;API Gateway &amp;amp; Authentication&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Multi-tenant: 6 pilot countries as isolated tenants&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#999999;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="270" y="198" width="660" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- ============================================================ -->
+        <!-- ROW 3 — SOLUTION MODULES (green)                             -->
+        <!-- ============================================================ -->
+        <mxCell id="row3_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;arcSize=4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="270" width="1120" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="row3_label" value="Solution Modules" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#548235;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="50" y="272" width="120" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Top row of 3 -->
+        <mxCell id="mod_valuation" value="&lt;b&gt;AI Valuation Module&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Device Identification&lt;br&gt;Condition Assessment&lt;br&gt;Dynamic Pricing&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="70" y="295" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mod_recycler" value="&lt;b&gt;Recycler Marketplace Module&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Onboarding &amp;bull; Bidding&lt;br&gt;Transactions&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="430" y="295" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mod_logistics" value="&lt;b&gt;Postal Logistics Module&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Pickup &amp;bull; Labels &amp;bull; Tracking&lt;br&gt;Routing &amp;bull; Payments&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="750" y="295" width="380" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- Bottom row of 3 -->
+        <mxCell id="mod_packaging" value="&lt;b&gt;Packaging &amp;amp; Safety Module&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Categorization &amp;bull; Hazard Flagging&lt;br&gt;Packaging Guidance&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="70" y="385" width="340" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mod_compliance" value="&lt;b&gt;Compliance &amp;amp; Reporting Module&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Dashboards &amp;bull; Metrics&lt;br&gt;Regulatory Exports&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="430" y="385" width="300" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mod_orchestration" value="&lt;b&gt;Consumer Interface Orchestration&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Journey Management&lt;br&gt;Notifications&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#82b366;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="750" y="385" width="380" height="70" as="geometry" />
+        </mxCell>
+
+        <!-- ============================================================ -->
+        <!-- ROW 4 — PLATFORM CORE (orange)                               -->
+        <!-- ============================================================ -->
+        <mxCell id="row4_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6a516;arcSize=4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="480" width="1120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="row4_label" value="Platform Core" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#b8860b;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="50" y="482" width="100" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="grove_core" value="&lt;b style=&quot;font-size:13px;&quot;&gt;Grove AI Agent Framework&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Config-driven AI agents (YAML) &amp;nbsp;|&amp;nbsp; Multi-model AI (GPT-4, Claude, Gemini) &amp;nbsp;|&amp;nbsp; Durable workflows (Temporal)&lt;br&gt;Plugin &amp;amp; tool system &amp;nbsp;|&amp;nbsp; State persistence (PostgreSQL) &amp;nbsp;|&amp;nbsp; Real-time voice (LiveKit)&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#d6a516;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="120" y="500" width="960" height="65" as="geometry" />
+        </mxCell>
+
+        <!-- ============================================================ -->
+        <!-- ROW 5 — INTEGRATION LAYER (light purple)                     -->
+        <!-- ============================================================ -->
+        <mxCell id="row5_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;arcSize=4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="590" width="1120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="row5_label" value="Integration Layer" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#7c5295;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="50" y="592" width="110" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Postal Systems group -->
+        <mxCell id="int_postal_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3edf7;strokeColor=#9673a6;arcSize=6;dashed=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="615" width="350" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="int_postal_title" value="&lt;b&gt;Postal Systems&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#7c5295;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="60" y="615" width="350" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="int_p1" value="DO Tracking API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=9;fontFamily=Helvetica;shadow=0;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="70" y="638" width="155" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="int_p2" value="Label Systems" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=9;fontFamily=Helvetica;shadow=0;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="235" y="638" width="165" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="int_p3" value="Counter Software" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=9;fontFamily=Helvetica;shadow=0;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="70" y="672" width="155" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="int_p4" value="Financial Services" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=9;fontFamily=Helvetica;shadow=0;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="235" y="672" width="165" height="28" as="geometry" />
+        </mxCell>
+
+        <!-- Hardware group -->
+        <mxCell id="int_hw_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3edf7;strokeColor=#9673a6;arcSize=6;dashed=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="425" y="615" width="275" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="int_hw_title" value="&lt;b&gt;Hardware&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#7c5295;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="425" y="615" width="275" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="int_h1" value="Smart Lockers" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=9;fontFamily=Helvetica;shadow=0;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="435" y="638" width="120" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="int_h2" value="Kiosks" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=9;fontFamily=Helvetica;shadow=0;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="565" y="638" width="125" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="int_h3" value="IoT Sensors" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=9;fontFamily=Helvetica;shadow=0;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="435" y="672" width="120" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="int_h4" value="QR / UID Scanners" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=9;fontFamily=Helvetica;shadow=0;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="565" y="672" width="125" height="28" as="geometry" />
+        </mxCell>
+
+        <!-- External Services group -->
+        <mxCell id="int_ext_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3edf7;strokeColor=#9673a6;arcSize=6;dashed=1;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="715" y="615" width="430" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="int_ext_title" value="&lt;b&gt;External Services&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;fontSize=10;fontColor=#7c5295;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="715" y="615" width="430" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="int_e1" value="Payment Gateways" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=9;fontFamily=Helvetica;shadow=0;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="725" y="638" width="200" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="int_e2" value="Recycler APIs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=9;fontFamily=Helvetica;shadow=0;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="935" y="638" width="200" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="int_e3" value="Regulatory DBs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=9;fontFamily=Helvetica;shadow=0;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="725" y="672" width="200" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="int_e4" value="Device Price Feeds" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#9673a6;fontSize=9;fontFamily=Helvetica;shadow=0;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="935" y="672" width="200" height="28" as="geometry" />
+        </mxCell>
+
+        <!-- ============================================================ -->
+        <!-- ROW 6 — DATA LAYER (dark gray)                               -->
+        <!-- ============================================================ -->
+        <mxCell id="row6_bg" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#4d4d4d;strokeColor=#333333;arcSize=4;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="730" width="1120" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="row6_label" value="Data Layer" style="text;html=1;align=left;verticalAlign=middle;fontSize=10;fontStyle=1;fontColor=#cccccc;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="50" y="732" width="80" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="db_main" value="&lt;font color=&quot;#FFFFFF&quot;&gt;&lt;b style=&quot;font-size:12px;&quot;&gt;Multi-tenant PostgreSQL&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#ccc;&quot;&gt;Schema-per-country isolation&lt;/font&gt;&lt;/font&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=8;fillColor=#666666;strokeColor=#999999;fontSize=11;fontFamily=Helvetica;shadow=0;" vertex="1" parent="1">
+          <mxGeometry x="460" y="748" width="280" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- 6 country tenant boxes -->
+        <mxCell id="tenant_a" value="&lt;font color=&quot;#FFFFFF&quot; style=&quot;font-size:9px;&quot;&gt;&lt;b&gt;Country A&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#5a7a9b;strokeColor=#4a6a8b;fontSize=9;fontFamily=Helvetica;shadow=0;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="130" y="820" width="140" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="tenant_b" value="&lt;font color=&quot;#FFFFFF&quot; style=&quot;font-size:9px;&quot;&gt;&lt;b&gt;Country B&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#5a7a9b;strokeColor=#4a6a8b;fontSize=9;fontFamily=Helvetica;shadow=0;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="290" y="820" width="140" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="tenant_c" value="&lt;font color=&quot;#FFFFFF&quot; style=&quot;font-size:9px;&quot;&gt;&lt;b&gt;Country C&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#5a7a9b;strokeColor=#4a6a8b;fontSize=9;fontFamily=Helvetica;shadow=0;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="450" y="820" width="140" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="tenant_d" value="&lt;font color=&quot;#FFFFFF&quot; style=&quot;font-size:9px;&quot;&gt;&lt;b&gt;Country D&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#5a7a9b;strokeColor=#4a6a8b;fontSize=9;fontFamily=Helvetica;shadow=0;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="610" y="820" width="140" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="tenant_e" value="&lt;font color=&quot;#FFFFFF&quot; style=&quot;font-size:9px;&quot;&gt;&lt;b&gt;Country E&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#5a7a9b;strokeColor=#4a6a8b;fontSize=9;fontFamily=Helvetica;shadow=0;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="770" y="820" width="140" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="tenant_f" value="&lt;font color=&quot;#FFFFFF&quot; style=&quot;font-size:9px;&quot;&gt;&lt;b&gt;Country F&lt;/b&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#5a7a9b;strokeColor=#4a6a8b;fontSize=9;fontFamily=Helvetica;shadow=0;arcSize=12;" vertex="1" parent="1">
+          <mxGeometry x="930" y="820" width="140" height="34" as="geometry" />
+        </mxCell>
+
+        <!-- ============================================================ -->
+        <!-- VERTICAL CONNECTORS (row-to-row)                             -->
+        <!-- ============================================================ -->
+
+        <!-- UI Consumer → API -->
+        <mxCell id="conn_ui_api_1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#999999;strokeWidth=1.5;endArrow=block;endFill=1;entryX=0.35;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" source="ui_consumer" target="api_gw" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <!-- UI Admin → API -->
+        <mxCell id="conn_ui_api_2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#999999;strokeWidth=1.5;endArrow=block;endFill=1;entryX=0.65;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" source="ui_admin" target="api_gw" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- API → Solution Modules (center arrow into row3 bg) -->
+        <mxCell id="conn_api_modules" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#82b366;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" source="api_gw" target="row3_bg" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Solution Modules → Platform Core -->
+        <mxCell id="conn_modules_core" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#d6a516;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="row3_bg" target="grove_core" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Platform Core → Integration Layer -->
+        <mxCell id="conn_core_integ" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#9673a6;strokeWidth=2;endArrow=block;endFill=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="grove_core" target="row5_bg" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Platform Core → Data Layer -->
+        <mxCell id="conn_core_data" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#666666;strokeWidth=2;endArrow=block;endFill=1;endSize=6;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" source="row5_bg" target="db_main" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- DB → Tenants -->
+        <mxCell id="conn_db_t1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#5a7a9b;strokeWidth=1;endArrow=block;endFill=1;endSize=4;exitX=0.17;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" source="db_main" target="tenant_a" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn_db_t2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#5a7a9b;strokeWidth=1;endArrow=block;endFill=1;endSize=4;exitX=0.33;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" source="db_main" target="tenant_b" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn_db_t3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#5a7a9b;strokeWidth=1;endArrow=block;endFill=1;endSize=4;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" source="db_main" target="tenant_c" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn_db_t4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#5a7a9b;strokeWidth=1;endArrow=block;endFill=1;endSize=4;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" source="db_main" target="tenant_d" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn_db_t5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#5a7a9b;strokeWidth=1;endArrow=block;endFill=1;endSize=4;exitX=0.67;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" source="db_main" target="tenant_e" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="conn_db_t6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#5a7a9b;strokeWidth=1;endArrow=block;endFill=1;endSize=4;exitX=0.83;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" source="db_main" target="tenant_f" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <!-- ================================================================== -->
+  <!-- PAGE 2 — DATA FLOW                                                 -->
+  <!-- ================================================================== -->
+  <diagram id="dataflow" name="Data Flow">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Title -->
+        <mxCell id="df_title" value="UPU Reverse Logistics &amp;mdash; End-to-End Data Flow" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fontSize=18;fontStyle=1;fontFamily=Helvetica;fontColor=#1a1a2e;" vertex="1" parent="1">
+          <mxGeometry x="200" y="20" width="800" height="40" as="geometry" />
+        </mxCell>
+
+        <!-- ============================================================ -->
+        <!-- FLOW STEPS — top to bottom, centered                         -->
+        <!-- ============================================================ -->
+
+        <!-- Step 1: Consumer -->
+        <mxCell id="df_s1" value="&lt;b&gt;Consumer&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Initiates device return&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="460" y="80" width="280" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Step 2: Photo Upload -->
+        <mxCell id="df_s2" value="&lt;b&gt;Photo Upload&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Device images captured via web portal or kiosk&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="460" y="160" width="280" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Step 3: AI Valuation -->
+        <mxCell id="df_s3" value="&lt;b&gt;AI Valuation&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Device ID, condition assessment, dynamic pricing&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="460" y="240" width="280" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Step 4: Packaging Assessment -->
+        <mxCell id="df_s4" value="&lt;b&gt;Packaging Assessment&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Categorization, hazard flagging, packaging guidance&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="460" y="320" width="280" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Step 5: Recycler Matching -->
+        <mxCell id="df_s5" value="&lt;b&gt;Recycler Matching&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Marketplace bid matching, recycler selection&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6a516;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="460" y="400" width="280" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Step 6: Postal Logistics -->
+        <mxCell id="df_s6" value="&lt;b&gt;Postal Logistics&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Label generation, pickup scheduling, routing&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6a516;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="460" y="480" width="280" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Step 7: Tracking -->
+        <mxCell id="df_s7" value="&lt;b&gt;Tracking&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Real-time shipment status, consumer notifications&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="460" y="560" width="280" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Step 8: Payment -->
+        <mxCell id="df_s8" value="&lt;b&gt;Payment&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Consumer payout, recycler settlement, DO fees&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="460" y="640" width="280" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Step 9: Compliance Reporting -->
+        <mxCell id="df_s9" value="&lt;b&gt;Compliance Reporting&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:9px;color:#555;&quot;&gt;Dashboards, metrics, regulatory exports to UPU&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=11;fontFamily=Helvetica;shadow=0;arcSize=20;" vertex="1" parent="1">
+          <mxGeometry x="460" y="720" width="280" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- ============================================================ -->
+        <!-- FLOW ARROWS                                                  -->
+        <!-- ============================================================ -->
+
+        <mxCell id="df_a1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#4a6fa5;strokeWidth=2;endArrow=block;endFill=1;endSize=6;" edge="1" source="df_s1" target="df_s2" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="df_a2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#4a6fa5;strokeWidth=2;endArrow=block;endFill=1;endSize=6;" edge="1" source="df_s2" target="df_s3" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="df_a3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#548235;strokeWidth=2;endArrow=block;endFill=1;endSize=6;" edge="1" source="df_s3" target="df_s4" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="df_a4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#548235;strokeWidth=2;endArrow=block;endFill=1;endSize=6;" edge="1" source="df_s4" target="df_s5" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="df_a5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#b8860b;strokeWidth=2;endArrow=block;endFill=1;endSize=6;" edge="1" source="df_s5" target="df_s6" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="df_a6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#b8860b;strokeWidth=2;endArrow=block;endFill=1;endSize=6;" edge="1" source="df_s6" target="df_s7" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="df_a7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#7c5295;strokeWidth=2;endArrow=block;endFill=1;endSize=6;" edge="1" source="df_s7" target="df_s8" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="df_a8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#7c5295;strokeWidth=2;endArrow=block;endFill=1;endSize=6;" edge="1" source="df_s8" target="df_s9" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ============================================================ -->
+        <!-- SIDE ANNOTATIONS (what system handles each phase)            -->
+        <!-- ============================================================ -->
+
+        <mxCell id="df_ann_intake" value="&lt;font style=&quot;font-size:9px;color:#4a6fa5;&quot;&gt;INTAKE&lt;/font&gt;" style="text;html=1;align=right;verticalAlign=middle;fontSize=9;fontStyle=1;fontFamily=Helvetica;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="100" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="df_ann_assess" value="&lt;font style=&quot;font-size:9px;color:#548235;&quot;&gt;ASSESS&lt;/font&gt;" style="text;html=1;align=right;verticalAlign=middle;fontSize=9;fontStyle=1;fontFamily=Helvetica;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="270" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="df_ann_match" value="&lt;font style=&quot;font-size:9px;color:#b8860b;&quot;&gt;MATCH&lt;/font&gt;" style="text;html=1;align=right;verticalAlign=middle;fontSize=9;fontStyle=1;fontFamily=Helvetica;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="430" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="df_ann_fulfill" value="&lt;font style=&quot;font-size:9px;color:#7c5295;&quot;&gt;FULFILL&lt;/font&gt;" style="text;html=1;align=right;verticalAlign=middle;fontSize=9;fontStyle=1;fontFamily=Helvetica;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="590" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="df_ann_report" value="&lt;font style=&quot;font-size:9px;color:#666666;&quot;&gt;REPORT&lt;/font&gt;" style="text;html=1;align=right;verticalAlign=middle;fontSize=9;fontStyle=1;fontFamily=Helvetica;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="730" width="70" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Right side: AI indicators -->
+        <mxCell id="df_ai_1" value="&lt;font style=&quot;font-size:9px;color:#b8860b;&quot;&gt;AI-powered&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=9;fontStyle=2;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="760" y="250" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="df_ai_2" value="&lt;font style=&quot;font-size:9px;color:#b8860b;&quot;&gt;AI-powered&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=9;fontStyle=2;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="760" y="330" width="80" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="df_ai_3" value="&lt;font style=&quot;font-size:9px;color:#b8860b;&quot;&gt;AI-powered&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;fontSize=9;fontStyle=2;fontFamily=Helvetica;" vertex="1" parent="1">
+          <mxGeometry x="760" y="410" width="80" height="20" as="geometry" />
+        </mxCell>
+
+        <!-- Phase brackets (vertical lines on the left) -->
+        <mxCell id="df_bracket_intake" value="" style="line;strokeWidth=2;html=1;strokeColor=#4a6fa5;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="335" y="120" width="80" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="df_bracket_assess" value="" style="line;strokeWidth=2;html=1;strokeColor=#548235;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="335" y="290" width="80" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="df_bracket_match" value="" style="line;strokeWidth=2;html=1;strokeColor=#b8860b;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="335" y="450" width="80" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="df_bracket_fulfill" value="" style="line;strokeWidth=2;html=1;strokeColor=#7c5295;rotation=90;" vertex="1" parent="1">
+          <mxGeometry x="335" y="610" width="80" height="10" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

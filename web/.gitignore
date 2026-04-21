@@ -1,0 +1,8 @@
+# Playwright
+playwright-report/
+test-results/
+src/app/(tenant)/(generated-solutions)/
+src/lib/generated-solution-manifests.ts
+src/lib/generated-solution-dashboard-widgets.tsx
+/node_modules
+.next

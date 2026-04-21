@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Build artifacts
+dist/
+build/
+*.tsbuildinfo
+
+# Playwright
+playwright-report/
+test-results/
+
+# Generated files (web)
+web/src/app/(tenant)/(generated-solutions)/
+web/src/lib/generated-solution-manifests.ts
+web/src/lib/generated-solution-dashboard-widgets.tsx
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Package manager lock files
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# Cache
+*.pack.gz
+*.pack.gz.old

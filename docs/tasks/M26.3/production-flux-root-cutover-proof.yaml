@@ -1,0 +1,11 @@
+checked_at: 2026-04-03
+cluster: manibo-production
+legacy_sync_path: ./clusters/production
+current_sync_path: ./infrastructure/kubernetes/flux/clusters/production
+command: >-
+  kubectl --context manibo-production get kustomization flux-system -n flux-system
+  -o jsonpath='{.spec.path}{"\n"}'
+output: ./infrastructure/kubernetes/flux/clusters/production
+bootstrap_contract:
+  - infrastructure/scripts/hetzner/production/bootstrap-flux-production.sh
+  - .github/workflows/flux-production-deploy.yml
