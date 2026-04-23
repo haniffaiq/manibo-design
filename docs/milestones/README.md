@@ -52,6 +52,7 @@ Archived milestone docs live in [README.md](README.md). This directory currently
 | **M41.5** | [M41.5-affidea-agent-authoring-ui-follow-on.md](M41.5-affidea-agent-authoring-ui-follow-on.md) | milestone doc only | Parked follow-on for the typed `source_yaml -> compiled_config` authoring UI model. Depends on M41.3 and explicit activation. |
 | **M41.6** | [M41.6-affidea-retrieval-follow-on.md](M41.6-affidea-retrieval-follow-on.md) | milestone doc only | Parked follow-on for retrieval only if M41.4 eval evidence shows deterministic KB is insufficient. Depends on M41.4 and explicit activation. |
 | **M36.1** | [M36.1-platform-api-route-entropy-phase2.md](M36.1-platform-api-route-entropy-phase2.md) | 8 tasks | Planning only - task-ready, but execution starts only after explicit human activation. M36 is merged and M36.1 now targets route-package contract enforcement, root support-module eviction, and entropy reduction in `workflows`, `call_ops`, `tenancy`, and telephony seams, with observability reserved for a dedicated follow-on milestone. |
+| **M40.1** | [M40.1-agent-calls-frontend-polish.md](M40.1-agent-calls-frontend-polish.md) | 7 tasks | Not started. Frontend-only polish for calls pages (admin + tenant). Replaces dummy actions, adds pagination, extracts shared components, fixes audio player, responsive polish. No dependencies. |
 
 ---
 
